@@ -17,10 +17,23 @@ public class Condition : MonoBehaviour
         curValue = startValue; // 게임을 저장하고 다시 시작할때 저장해놓은 값
     }
 
-    void Update()
+    void Update() // ui업데이트
     {
-        // ui업데이트
+        uiBar.fillAmount = GetPercentage();
     }
 
+    float GetPercentage()
+    {
+        return curValue / maxValue;
+    }
 
+    public void Add(float value)
+    {
+        curValue = Mathf.Min(curValue + value, maxValue);
+    }
+
+    public void Subtract(float value)
+    {
+        curValue = Mathf.Max(curValue - value, 0);
+    }
 }

@@ -208,10 +208,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curValue: 0
-  startValue: 0
-  maxValue: 0
-  passiveValue: 0
-  uiBar: {fileID: 0}
+  startValue: 100
+  maxValue: 100
+  passiveValue: 1
+  uiBar: {fileID: 1439516465}
 --- !u!114 &289407279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +264,7 @@ GameObject:
   - component: {fileID: 294326734}
   - component: {fileID: 294326733}
   - component: {fileID: 294326732}
+  - component: {fileID: 294326735}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -371,6 +372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
+  condition: {fileID: 0}
 --- !u!114 &294326734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,6 +463,20 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &294326735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294326728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acc78af1cd967a1488734e3363b10a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiCondition: {fileID: 0}
+  noHungerHealthDecay: 2
 --- !u!1 &521554756
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,10 +859,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curValue: 0
-  startValue: 0
-  maxValue: 0
-  passiveValue: 0
-  uiBar: {fileID: 0}
+  startValue: 100
+  maxValue: 100
+  passiveValue: 5
+  uiBar: {fileID: 2096771919}
 --- !u!114 &1174141806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -938,10 +954,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curValue: 0
-  startValue: 0
-  maxValue: 0
-  passiveValue: 0
-  uiBar: {fileID: 0}
+  startValue: 400
+  maxValue: 500
+  passiveValue: 20
+  uiBar: {fileID: 1553210010}
 --- !u!114 &1341644060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1182,6 +1198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5cc305586d51b408e46363e7fc2e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 289407278}
+  hunger: {fileID: 1341644059}
+  stamina: {fileID: 1174141805}
 --- !u!114 &1613629707
 MonoBehaviour:
   m_ObjectHideFlags: 0
