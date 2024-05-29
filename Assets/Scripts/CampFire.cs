@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CampFire : MonoBehaviour
 {
-    public int damage;
-    public float damageRate;
+    public int damage; // 데미지를 주는
+    public float damageRate; // 데미지를 얼마나 자주줄건지
 
     List<IDamagable> things = new List<IDamagable>();
 
